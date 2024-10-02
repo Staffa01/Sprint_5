@@ -1,0 +1,7 @@
+enter_in_akount_button = ".//button[text()='Войти в аккаунт']"
+registration_link = ".//a[text()='Зарегистрироваться']"
+registration_buton = ".//button[text()='Зарегистрироваться']"
+enter_button = ".//button[text()='Войти']"
+email_input = ".//label[text()='Email']/following::input[@name='name']"
+password_input = ".//label[text()='Пароль']/following::input[@name='Пароль']"
+place_an_order_buton = ".//button[text()='Оформить заказ']"
