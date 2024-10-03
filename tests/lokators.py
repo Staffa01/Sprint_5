@@ -1,0 +1,12 @@
+class Lokator:
+    enter_in_akount_button = ".//button[text()='Войти в аккаунт']"
+    registration_link = ".//a[text()='Зарегистрироваться']"
+    registration_buton = ".//button[text()='Зарегистрироваться']"
+    enter_button = ".//button[text()='Войти']"
+    email_input = ".//label[text()='Email']/following::input[@name='name']"
+    password_input = ".//label[text()='Пароль']/following::input[@name='Пароль']"
+    place_an_order_buton = ".//button[text()='Оформить заказ']"
+    profile_button_header = ".//a[contains(@href,'/account')]"
+    recover_password_link = ".//a[contains(@href,'/forgot-password')]"
+    recover_button = ".//button[text()='Восстановить']"
+    login_button_in_recover_page = ".//a[contains(@href,'/login')]"
