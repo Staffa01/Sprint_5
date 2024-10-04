@@ -18,10 +18,10 @@ def write_test_data(data_dict):
 @pytest.fixture
 def new_user_email():
     data_dict = read_test_data()
-    index = int(data_dict['user_index']) + 1
+    index = int(data_dict['user_index'])
     email = f'ruslanabasev14{index}@yandex.ru'
-    data_dict['user_index'] = index
-    write_test_data(data_dict)
+    # data_dict['user_index'] = index
+    # write_test_data(data_dict)
     return email
 
 
