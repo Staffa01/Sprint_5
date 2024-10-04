@@ -39,6 +39,7 @@ def test_registration_confirm(new_user_email):
     reg_confirm()
     driver.quit()
 
+
 def test_registration_with_invalid_password_not_registred(new_user_email):
     driver = webdriver.Chrome()
     driver.get("https://stellarburgers.nomoreparties.site/")
@@ -52,6 +53,5 @@ def test_registration_with_invalid_password_not_registred(new_user_email):
     driver.find_element(By.NAME, 'Пароль').send_keys("qw")
     driver.find_element(By.XPATH, Lokator.registration_buton).click()
     assert driver.find_element(By.XPATH,".//div[@class='input__container']/p[text()='Некорректный пароль']").text == 'Некорректный пароль'
-    reg_confirm()
     driver.quit()
 
