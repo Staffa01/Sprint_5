@@ -1,4 +1,12 @@
 class Lokator:
+    url = {
+        'base':'https://stellarburgers.nomoreparties.site/',
+        'register':'https://stellarburgers.nomoreparties.site/register',
+        'login':'https://stellarburgers.nomoreparties.site/login',
+        'profile':'https://stellarburgers.nomoreparties.site/account/profile',
+        'forgot-password':'https://stellarburgers.nomoreparties.site/forgot-password'
+    }
+
     enter_in_akount_button = ".//button[text()='Войти в аккаунт']" #Кнопка Войти в аккаунт на главной
     registration_link = ".//a[text()='Зарегистрироваться']" #Ссылка на регистрацию в экране авторизации /login
     registration_buton = ".//button[text()='Зарегистрироваться']" #Кнопка Зарегистрироваться в экране регистрации /register
@@ -16,3 +24,7 @@ class Lokator:
     span_fillings = ".//span[text()='Начинки']" # Разделы конструктора
     span_sauces = ".//span[text()='Соусы']"
     span_buns = ".//span[text()='Булки']"
+    span_fillings_after_click = "//div[contains(@class,'tab_tab_type_current')]//span[text()='Начинки']"
+    span_sauces_after_click = "//div[contains(@class,'tab_tab_type_current')]//span[text()='Соусы']"
+    span_buns_after_click = "//div[contains(@class,'tab_tab_type_current')]//span[text()='Булки']"
+    wrong_password = ".//div[@class='input__container']/p[text()='Некорректный пароль']"
